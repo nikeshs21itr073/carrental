@@ -23,7 +23,7 @@ const BookingForm = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3005/u/h", formData);
+      const response = await axios.post("https://backend3-bdkl.onrender.com/u/h", formData);
 
       if (response.data.message === "Booking successful") {
         alert("Booking successful!"); // Show success message
